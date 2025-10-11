@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2: HTML&CSS</title>
+    <!-- 3 способ: создание отдельного файла styles.css и привязка его к файлу html -->
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <!-- 2 способ: описать css свойства в теге style(который должен находиться в теге head) -->
+    <!-- <style>
+      a {
+        color: red;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <!-- 1 способ:  inline стили, через атрибут style -->
+        <span style="color: green">Logo</span>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Our Clients</a>
+          <a href="#">FAQ</a>
+        </nav>
+      </header>
+      <main>
+        <!-- Пример с блочными и строчными элементами -->
+        <!-- <div>Block container</div>
+        <div>Block container 2</div>
+        <span>Inline container</span>
+        <span>Inline container 2</span> -->
+        <h3 id="actor_header">Information about actors</h3>
+        <div>
+          <h3 class="actor_name">Bratt Pitt</h3>
+          <p>Age: 50</p>
+        </div>
+        <div>
+          <h3 class="actor_name">Johny Depp</h3>
+          <p>Age: 52</p>
+        </div>
+        <div>
+          <h3 class="actor_name">George Clooney</h3>
+          <p>Age: 60</p>
+        </div>
+      </main>
+      <footer>Some information about our application</footer>
+    </div>
+  </body>
+</html>

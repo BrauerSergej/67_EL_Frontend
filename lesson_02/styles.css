@@ -1,0 +1,32 @@
+/* font-size - размер текста 
+   color - цвет текста
+   font-weight - толщина шрифта
+   text-decoration - задаёт вид декоративных линий в тексте
+   backround-color - изменяет цвет фона
+*/
+
+/* a - это тег, но в css это называется селектор. Селектор - это то, с помощью чего мы определяем кому именно мы даем стили */
+a {
+  color: rgb(241, 83, 25);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline dashed;
+}
+
+/* cелектор по классу */
+.actor_name {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* селектор по id */
+#actor_header {
+  color: purple;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#root {
+  background-color: aquamarine;
+}
