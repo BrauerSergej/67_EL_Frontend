@@ -1,0 +1,74 @@
+/* width - задает ширину элемента, height - задает высоту элемента:
+- fit-content - по контенту
+- min-content - внутренняя минимальная ширина
+- max-content - внутрення максимальная предпочтительная ширина
+- % - ширина или высота подстраивается под родительский контейнер
+- px - от колличества px зависит ширина или высота контейнера */
+
+/* border - св-во, которое задает границы для элемента и имеет 3 значения:
+1 - ширина границы
+2 - стиль границы. Например: сплошная линия или пунктир
+3 - цвет границы */
+
+/* padding - это св-во, которое добавляет внутренней отступ в html элементе. Также св-во margin имеет те же значения и возможности, только
+вместо слова padding пишем слово margin
+Варианты использования:
+-   padding: 15px; - добавляет внутренний отступ со всех сторон
+ - padding: 15px 20px; -  1 значение - сверху/снизу, 2 значение - справа/слева
+  - padding: 10px 20px 5px 15px; - добавлеет отступы по отдельности по часовой стрелке, начиная сверху(1 значение)
+  Следующие св-ва позоляют задавать отступы для каждой из сторон:
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px; */
+
+/* * - выбирает все теги в вашем html документе и назначает им св-ва перечисленные в фигурных скобках */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100%;
+  background-color: rgb(245, 146, 235);
+  padding: 20px;
+}
+
+.box {
+  /* min-width: 300px;
+  max-width: fit-content;
+  min-height: 300px;
+  max-height: fit-content; */
+  width: 300px;
+  height: 300px;
+  background-color: rgb(133, 192, 245);
+  border: 4px dashed black;
+  padding: 15px;
+  /* padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px; */
+  /* padding: 15px 20px; */
+  /* padding: 15px 20px 25px 30px; */
+  margin: 40px;
+  /* box-sizing: border-box; */
+  /* box-sizing: content-box; */
+}
