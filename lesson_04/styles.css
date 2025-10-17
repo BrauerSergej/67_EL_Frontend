@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: antiquewhite;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* padding: 20px; */
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#box1 {
+  /* display: none - скрывает элементн на странице и его место на странице проподает, следовательно, какой-то другой элемент это место займёт*/
+  /* display: none; */
+  /* visibility: hidden  скрывает элемент на странице и его место на странице не проподает */
+  /* visibility: hidden; */
+  background-color: aquamarine;
+}
+
+#box2 {
+  background-color: blue;
+}
+
+#box3 {
+  background-color: blueviolet;
+}
+
+#box4 {
+  background-color: red;
+}
+
+#box5 {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+}
