@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 5: Forms</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div id="root">
+      <form class="user_form">
+        <p class="user_form_title">User Form</p>
+        <div class="user_form_container">
+          <label class="user_form_label" for="user_firstname">First Name</label>
+          <input
+            id="user_firstname"
+            class="user_form_input"
+            placeholder="Enter firstname"
+            name="firstName"
+            value="John"
+          />
+        </div>
+        <div class="user_form_container">
+          <label class="user_form_label" for="user_lastname">Last Name</label>
+          <input
+            id="user_lastname"
+            class="user_form_input"
+            placeholder="Enter lastname"
+            name="lastName"
+          />
+        </div>
+        <div class="user_form_container">
+          <label class="user_form_label" for="user_email">Email</label>
+          <input
+            id="user_email"
+            class="user_form_input"
+            placeholder="Enter your email"
+            name="email"
+            type="email"
+          />
+        </div>
+        <div class="user_form_container">
+          <label class="user_form_label" for="user_password">Password</label>
+          <input
+            id="user_password"
+            class="user_form_input"
+            placeholder="Enter your password"
+            name="password"
+            type="password"
+            required
+          />
+        </div>
+        <div class="user_form_container">
+          <label class="user_form_label" for="user_job">Job</label>
+          <select id="user_job" class="user_form_input" name="job">
+            <option value="QA">QA</option>
+            <option value="Frontend developer">Frontend developer</option>
+            <option value="Backend developer">Backend developer</option>
+            <option value="Mobile developer">Mobile developer</option>
+            <option value="UI/UX developer">UI/UX developer</option>
+          </select>
+        </div>
+        <div class="user_form_container">
+          <label class="user_form_label" for="user_textarea">Message</label>
+          <textarea
+            id="user_textarea"
+            class="textarea"
+            placeholder="Enter your review"
+            name="review"
+          ></textarea>
+        </div>
+        <div class="checkbox_container">
+          <input
+            id="user_checkbox"
+            class="form_checkbox"
+            name="agree"
+            type="checkbox"
+          />
+          <label class="user_form_label" for="user_checkbox"
+            >I agree with the privacy policy</label
+          >
+        </div>
+        <!-- 1. submit - собирает данные из формы и позволяет с ними что-то сделать(создать карточку, отправить данные на сервер) -->
+        <!-- 2. reset - чистит введенные данные в форме -->
+        <!-- 3. button - не делает ничего, пока не добавить ей функцию через JavaScript -->
+        <button type="submit" class="create_user">Create User</button>
+      </form>
+    </div>
+  </body>
+</html>

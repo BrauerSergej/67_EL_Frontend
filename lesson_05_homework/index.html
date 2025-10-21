@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>Lesson 05 homework_Contact_us</title>
+  </head>
+  <body>
+    <div id="root">
+      <form class="contact_us_form">
+        <p class="contact_us_title">Contact us</p>
+        <div class="contact_us_container">
+          <label class="contact_us_label" for="contact_us_name">Name*</label>
+          <input
+            id="contact_us_name"
+            class="contact_us_form_input"
+            placeholder="Enter your name"
+            name="name"
+            type="text"
+            required
+          />
+        </div>
+        <div class="contact_us_container">
+          <label class="contact_us_label" for="contact_us_email">Email*</label>
+          <input
+            id="contact_us_email"
+            class="contact_us_form_input"
+            placeholder="Enter your email"
+            name="email"
+            type="email"
+            required
+          />
+        </div>
+        <div class="contact_us_container">
+          <label class="contact_us_label" for="contact_us_location"
+            >Location</label
+          >
+          <select
+            id="contact_us_location"
+            class="contact_us_form_input"
+            name="location"
+          >
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Boston">Boston</option>
+          </select>
+        </div>
+        <div class="contact_us_container">
+          <label class="contact_us_label" for="contact_us_textarea"
+            >Message*</label
+          >
+          <textarea
+            id="contact_us_textarea"
+            placeholder="Enter your message"
+            name="message"
+            class="messagearea"
+            required
+          ></textarea>
+        </div>
+        <div class="checkbox_container">
+          <input
+            id="contact_us_checkbox"
+            class="form_checkbox"
+            name="agree"
+            type="checkbox"
+            required
+          />
+          <label class="contact_us_label" for="contact_us_checkbox"
+            >I agree</label
+          >
+        </div>
+        <button type="submit" class="send_clear_button">SEND REQUEST</button>
+        <button type="reset" class="send_clear_button">CLEAR FORM</button>
+      </form>
+    </div>
+  </body>
+</html>
