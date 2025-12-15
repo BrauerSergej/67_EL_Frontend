@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #f5ebe0;
+  /* padding: 30px; */
+}
+
+.header {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  background-color: blueviolet;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 3px solid black;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 130px 30px 30px 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.car {
+  position: relative;
+  z-index: 1;
+  background: rgb(108, 108, 247);
+  width: 400px;
+  /* min-height - минимальная высота 500px - но будет растягиваться по высоте - если будет больше контента */
+  min-height: 500px;
+  padding: 20px;
+  border: 2px solid black;
+  font-family: sans-serif;
+  font-size: 18px;
+  /* font-style: oblique; */
+  color: black;
+}
+
+.img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+.label_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 41px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#label_1 {
+  position: absolute;
+  background-color: red;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+#label_2 {
+  position: absolute;
+  background-color: green;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+#audi {
+  border: 2px dashed darkgreen;
+}
+
+#porsche {
+  border: 2px dotted red;
+}
+
+#volvo {
+  border: 2px dashed darkblue;
+}
+
+#nissan {
+  border: 2px solid red;
+}
+
+#lexus {
+  border: 2px double green;
+}
+
+#vw {
+  border: 2px dotted black;
+}
+
+#kia {
+  border: 2px solid salmon;
+}
+
+#honda {
+  border: 2px solid aqua;
+}
+
+#toyota {
+  border: 2px dashed firebrick;
+}
+
+#ferrari {
+  border: 2px solid forestgreen;
+}
+
+#color {
+  color: brown;
+  font-style: italic;
+}
+
+.icon_container {
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: fixed;
+  background-color: white;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+#icon {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  background-color: #eb9486;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 24px;
+  border-top: 3px solid black;
+  color: white;
+  font-size: 16px;
+}

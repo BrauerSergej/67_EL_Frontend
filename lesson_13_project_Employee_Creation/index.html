@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Autorisation_Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <header class="header">
+        <div class="logo">App Logo</div>
+      </header>
+      <main>
+        <div class="main">
+          <form class="user_form">
+            <div class="user_form_container">
+              <label class="user_form_label" for="user_name">Name*</label>
+              <input
+                id="user_name"
+                class="user_form_input"
+                placeholder="John"
+                name="name"
+                type="text"
+              />
+            </div>
+            <div class="user_form_container">
+              <label class="user_form_label" for="user_surname">Surname*</label>
+              <input
+                id="user_surname"
+                class="user_form_input"
+                placeholder="Johnson"
+                name="surname"
+                type="text"
+              />
+            </div>
+            <div class="user_form_container">
+              <label class="user_form_label" for="user_age">Age*</label>
+              <input
+                id="user_age"
+                class="user_form_input"
+                placeholder="25"
+                name="age"
+                type="age"
+              />
+            </div>
+            <div class="user_form_container">
+              <label class="user_form_label" for="user_job">Job Position</label>
+              <select
+                id="user_job"
+                class="user_form_input user_form_label"
+                name="job"
+              >
+                <option value="QA">QA</option>
+                <option value="Frontend developer">Frontend developer</option>
+                <option value="Backend developer">Backend developer</option>
+                <option value="Mobile developer">Mobile developer</option>
+                <option value="UI/UX developer">UI/UX developer</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit" class="create_user">Create</button>
+            </div>
+          </form>
+          <div class="output_card card">
+            <div class="output_info">
+              < class="result_label">
+                <p>Name</p>
+                <div class="result_info" id="result_name"></div>
+              </div>
+            </div>
+            <div class="output_info">
+              <div class="result_label">
+                <p>Surname</p>
+                <div class="result_info" id="result_surname"></div>
+              </div>
+            </div>
+            <div class="output_info">
+              <div class="result_label">
+                <p>Age</p>
+                <div class="result_info" id="result_age"></div>
+              </div>
+            </div>
+            <div class="output_info">
+              <div class="result_label">
+                <p>Job Position</p>
+                <div class="result_info" id="result_job_position"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

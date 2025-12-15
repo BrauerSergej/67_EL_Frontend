@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Clothes Store</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body id="root">
+    <header class="header">
+      <nav class="header_links nav">
+        <a class="h1_text" href="../Clothes Store/index.html">URBAN THREADS</a>
+        <a class="link hidden" href="#">New Arrivals</a>
+        <a class="link hidden" href="#">Men</a>
+        <a class="link hidden" href="#">Women</a>
+        <a class="link hidden" href="#">Sale</a>
+      </nav>
+      <nav class="header_icons">
+        <a href="#" class="icon hidden">
+          <img
+            src="../Clothes Store/assets/search_icon.png"
+            alt="Search icon"
+          />
+        </a>
+        <a href="#" class="icon hidden">
+          <img
+            src="../Clothes Store/assets/login_icon.webp"
+            alt="Profile icon"
+          />
+        </a>
+        <a href="#" class="icon cart_icon">
+          <img src="../Clothes Store/assets/cart_icon.png" alt="Cart icon" />
+        </a>
+        <span class="burger_menu"
+          ><svg
+            width="25"
+            height="25"
+            viewBox="0 0 22 22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="3" y="5" width="18" height="2" rx="1" />
+            <rect x="3" y="11" width="18" height="2" rx="1" />
+            <rect x="3" y="17" width="18" height="2" rx="1" />
+          </svg>
+        </span>
+      </nav>
+    </header>
+    <main>
+      <div class="main_image">
+        <div class="overlay">
+          <h2 class="h2_text">Fall Collection 2025</h2>
+          <p>
+            Discover the latest trends in fashion. Elevate your style with our
+            curated
+          </p>
+          <p>collection.</p>
+          <button class="btn_shop_now">Shop Now</button>
+        </div>
+      </div>
+      <div id="filters">
+        <form class="form">
+          <div class="form_container">
+            <label class="form_label" for="product_gender">Gender</label>
+            <select id="product_gender" class="form_input" name="gender">
+              <option value="all">All</option>
+              <option value="men">Men</option>
+              <option value="women">Women</option>
+            </select>
+          </div>
+          <div class="form_container">
+            <label class="form_label" for="product_price">Price</label>
+            <select id="product_price" class="form_input" name="price">
+              <option value="all">All</option>
+              <option value="0-200">0-200$</option>
+              <option value="201-400">201-400$</option>
+              <option value="401-600">401-600$</option>
+              <option value="601-800">601-800$</option>
+              <option value="801-1000">801-1000$</option>
+            </select>
+          </div>
+          <div class="form_container">
+            <label class="form_label" for="product_type">Choose product</label>
+            <select id="product_type" class="form_input" name="type">
+              <option value="all">All</option>
+              <option value="Jeans">Jeans</option>
+              <option value="T-shirt">T-shirt</option>
+              <option value="Jacket">Jacket</option>
+              <option value="Sweater">Sweater</option>
+            </select>
+          </div>
+          <div class="form_container">
+            <button class="search_button" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+      <div id="cards" class="cards_container"></div>
+      <a href="#filters" class="icon_container">
+        <img
+          src="../Clothes Store/expand_circle_up_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="Arrow up icon"
+          id="icon"
+        />
+        <span class="icon_text">Back to filters</span>
+      </a>
+    </main>
+    <footer class="footer">
+      <div class="footer_info">
+        <div class="info">
+          <h3>URBAN THREADS</h3>
+          <p>Your destination for modern, stylish clothing.</p>
+        </div>
+        <div class="info">
+          <h3>Shop</h3>
+          <a href="#">New Arrivals</a>
+          <a href="#">Men</a>
+          <a href="#">Woman</a>
+          <a href="#">Sale</a>
+        </div>
+        <div class="info">
+          <h3>SUPPORT</h3>
+          <a href="#">Contact Us</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="info">
+          <h3>Company</h3>
+          <a href="#">About</a>
+          <a href="#">Carerrs</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="all_rights">
+        <p>© 2025 Urban Threads. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    rgba(18, 45, 77, 0.5);
+  backdrop-filter: blur(8.9px);
+  color: white;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* MAIN */
+main {
+  background-image: url("./assets/Image20251208191138.png");
+  flex: 1;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  padding: 180px 80px 80px 80px;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* FORM */
+.weather_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.city_input {
+  height: 48px;
+  width: 550px;
+  border-radius: 40px;
+  border: 1px solid #ffffff;
+  padding: 12px 12px 12px 20px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.city_input::placeholder {
+  color: #e0e0e0;
+}
+
+.search_button {
+  width: 146px;
+  height: 48px;
+  border-radius: 50px;
+  padding: 12px 40px;
+  background-color: #3678b4;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.search_button:hover:enabled {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.search_button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* WEATHER CARD */
+.weather_temp {
+  /* по умолчанию скрыта, показываем через JS */
+  display: flex;
+  color: #ffffff;
+  width: 709px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* верхняя часть: температура слева, иконки справа */
+.weather_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(47, 72, 111, 0.5),
+    rgba(11, 27, 52, 0.5)
+  );
+  backdrop-filter: blur(8.9px);
+  width: 100%;
+  border-radius: 18px;
+  padding: 24px 32px;
+}
+
+.weather_main_left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.temperature {
+  font-size: 57px;
+  font-weight: 500;
+}
+
+.city-name {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* три иконки справа */
+.weather_main_right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 74px;
+  height: 74px;
+}
+
+/* нижняя часть: FEELS LIKE + пустой блок */
+.weather_bottom {
+  display: flex;
+  width: 223px;
+  height: 141px;
+  gap: 24px;
+  justify-content: flex-start;
+  background: linear-gradient(
+    0deg,
+    rgba(47, 72, 111, 0.5),
+    rgba(11, 27, 52, 0.5)
+  );
+  backdrop-filter: blur(8.9px);
+  border-radius: 18px;
+  padding: 24px 32px;
+}
+
+.feels_like_temp {
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.value {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.empty {
+  display: none;
+  flex: 1;
+  height: 141px;
+  border-radius: 10px;
+}
+
+/* LOADING & ERROR */
+.loading,
+.error {
+  display: none; /* по умолчанию скрыты, показываем через JS */
+  justify-content: center;
+  align-items: center;
+  width: 709px;
+  height: 129px;
+  border-radius: 18px;
+  font-size: 57px;
+  font-weight: 500;
+  background: linear-gradient(
+    0deg,
+    rgba(47, 72, 111, 0.5),
+    rgba(11, 27, 52, 0.5)
+  );
+  backdrop-filter: blur(8.9px);
+  color: #ffffff;
+}
+
+.error {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.api_error {
+  font-size: 36px;
+  color: #ff4b4b;
+}
+
+.error_message {
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Homework 12 Calc ideal weight</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <form class="weight_calculator_form">
+        <p class="form_title">Calc ideal weight</p>
+        <div class="field_container">
+          <label class="label" for="height_label">Height cm*</label>
+          <input
+            id="height_label"
+            class="calc_input"
+            name="height"
+            placeholder="Enter your height"
+            type="number"
+            required
+          />
+        </div>
+        <div class="field_container">
+          <label for="gender_select" class="label">Select gender</label>
+          <select 
+          class="calc_input" 
+          name="gender" 
+          id="gender_select"
+          required
+          >
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <button type="submit" class="calc_input" id="calc_button">Calculate</button>
+        <div class="result"></div>
+      </form>
+    </div>
+  </body>
+</html>

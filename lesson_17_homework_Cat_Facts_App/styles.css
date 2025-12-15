@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: rgb(26, 35, 53);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  width: 800px;
+  min-height: 300px;
+  max-height: 600px;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px solid black;
+  flex: 1;
+}
+
+/* пустой блок, сюда мы позже запишем текст факты о котах */
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  overflow-y: auto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn_get_fact {
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn_get_fact:hover {
+  background-color: rgb(223, 51, 51);
+}
+
+.btn_get_fact:disabled {
+  background-color: rgb(181, 166, 166);
+  cursor: not-allowed;
+}
+
+.fact_container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.delete_button {
+  min-width: 120px;
+  max-width: 120px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: rgb(209, 59, 59);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}

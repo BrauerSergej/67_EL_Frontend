@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./register.css" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>Cinema</title>
+  </head>
+  <body>
+    <div id="root">
+      <header class="header">
+        <div class="logo">
+          <a class="logo" href="../project_cinema/index.html">Kinogit</a>
+          <img
+            class="logo_img"
+            src="https://ih1.redbubble.net/image.3509840498.7124/st,medium,507x507-pad,600x600,f8f8f8.jpg"
+            alt="cinema_logo"
+          />
+        </div>
+        <nav class="navigation">
+          <label for="client_search" class="search">Поиск по сайту</label>
+          <input
+            id="client_search"
+            class="client_input"
+            placeholder="Введите название фильма"
+            name="search"
+            type="search"
+            required
+          />
+        </nav>
+        <nav class="navigation">
+          <a class="link" href="./pages/genre/genre.html">Genre</a>
+          <a class="link" href="./pages/movies/movies.html">Movies</a>
+          <a class="link" href="./pages/series/series.html">Series</a>
+          <a class="link" href="./pages/register/register.html"
+            >Create account</a
+          >
+          <a class="link" href="./pages/login/login.html">
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/elevator/154/elevator-user-man-ui-round-login-512.png"
+              alt="log_in_profile"
+              class="log_in_profile"
+            />
+          </a>
+        </nav>
+      </header>
+      <main>
+        <form class="login_form">
+          <p class="login_form_title">Login</p>
+          <div class="login_form_container">
+            <label class="login_form_label" for="user_email">Email</label>
+            <input
+              id="user_email"
+              class="login_form_input"
+              placeholder="Enter your email"
+              name="email"
+              type="email"
+              required
+            />
+          </div>
+          <div class="login_form_container">
+            <label class="login_form_label" for="user_password">Password</label>
+            <input
+              id="user_password"
+              class="login_form_input"
+              placeholder="Enter your password"
+              name="password"
+              type="password"
+              required
+            />
+          </div>
+          <div class="form_buttons">
+            <button type="reset" class="clear_form">CLEAR FORM</button>
+            <button type="submit" class="login">LOGIN</button>
+          </div>
+          <a href="../registration/index.html"
+            >Do not have an account? Register</a
+          >
+        </form>
+      </main>
+      <footer class="footer">
+        <div>
+          <h3>CarsApp</h3>
+          <p>© 2025 Кинопоиск</p>
+        </div>
+        <address>
+          <p>10115 Berlin</p>
+          <p>Karl-Liebknect-Str. 12</p>
+          <p>Deutschland</p>
+        </address>
+        <address class="footer-link">
+          <p><a href="mailto:support@carsapp.de">support@carsapp.de</a></p>
+          <p><a href="tel:+493012345678">+49 30 123 45 678</a></p>
+        </address>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <h1>Weather App</h1>
+      </header>
+      <main>
+        <div class="container">
+          <!-- Форма -->
+          <form class="weather_info">
+            <input
+              id="city"
+              class="city_input"
+              placeholder="Colorado"
+              name="city_name"
+            />
+            <button type="submit" class="search_button">Search</button>
+          </form>
+            <section class="weather_temp">
+              <div class="weather_top">
+                <div class="weather_main_left">
+                  <p class="temperature"></p>
+                  <p id="cityName" class="city-name"></p>
+                </div>
+                <div class="weather_main_right">
+                  <img
+                    id="weatherIcon1"
+                    src=""
+                    alt="weather icon"
+                    class="weather-icon"
+                  />
+                  <img
+                    id="weatherIcon2"
+                    src=""
+                    alt="weather icon"
+                    class="weather-icon"
+                  />
+                  <img
+                    id="weatherIcon3"
+                    src=""
+                    alt="weather icon"
+                    class="weather-icon"
+                  />
+                </div>
+              </div>
+
+              <div class="weather_bottom">
+                <div class="feels_like_temp">
+                  <p class="label">FEELS LIKE</p>
+                  <p id="feelsLike" class="value"></p>
+                </div>
+                <div class="empty"></div>
+              </div>
+            </section>
+            <!-- Ошибка -->
+            <section class="error">
+              <p class="api_error"></p>
+              <p class="error_message"></p>
+            </section>
+            <!-- Загрузка -->
+            <section class="loading">
+              <p>Loading...</p>
+            </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
