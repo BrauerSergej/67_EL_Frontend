@@ -49,13 +49,11 @@ body {
 .main {
   display: flex;
   padding-top: 276px;
-  padding-left: 81px;
   gap: 81px;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex: 1;
-  padding-right: 81px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .user_form {
@@ -63,7 +61,7 @@ body {
   padding: 60px;
   border-radius: 4px;
   width: 590px;
-  height: 592px;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -121,19 +119,13 @@ button {
 .output_card {
   display: flex;
   flex-direction: column;
-  /* width: 590px; */
-  min-width: 100px;
+  min-width: 450px;
   max-width: 590px;
   height: 470px;
   border-radius: 4px;
   background-color: #ffffff;
   padding: 60px;
-  gap: 30px;
-}
-
-.output_info {
-  width: 470px;
-  height: 65px;
+  gap: 50px;
 }
 
 .result_label {
@@ -152,6 +144,6 @@ button {
   color: #1c1c1c;
 }
 
-.card {
+.output_card[hidden] {
   display: none;
 }
