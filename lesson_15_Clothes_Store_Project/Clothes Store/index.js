@@ -316,9 +316,6 @@ function renderCards(products) {
   cardsContainer.innerHTML = ""; // очищаем контейнер
 
   products.forEach((item) => {
-    // const card = document.createElement("div");
-    // card.className = "card";
-
     // создаём структуру с помощью innerHTML
     cardsContainer.innerHTML += `
       <div class="card">
@@ -328,47 +325,6 @@ function renderCards(products) {
         <div class="card_gender">${item.gender}</div>
         <div class="card_status">${item.status}</div>
       </div> `;
-
-
-    // Создаём элемент карточки
-    // const card = document.createElement("div");
-    // card.className = "card";
-
-    // //картинка
-    // const image = document.createElement("img");
-    // image.className = "card_image";
-    // image.src = item.imgUrl;
-    // image.alt = "Product photo";
-
-    // //название товара
-    // const type = document.createElement("div");
-    // type.className = "product_type";
-    // type.textContent = item.type;
-
-    // //цена товара
-    // const price = document.createElement("div");
-    // price.className = "card_price";
-    // price.textContent = item.price + " $";
-
-    // //пол
-    // const gender = document.createElement("div");
-    // gender.className = "card_gender";
-    // gender.textContent = item.gender;
-
-    // //статус товара
-    // const status = document.createElement("div");
-    // status.className = "card_status";
-    // status.textContent = item.status;
-
-    // // Собираем карточку
-    // card.appendChild(image);
-    // card.appendChild(type);
-    // card.appendChild(price);
-    // card.appendChild(gender);
-    // card.appendChild(status);
-
-    // // Добавляем карточку в контейнер
-    // cardsContainer.appendChild(card);
   });
 }
 
@@ -404,15 +360,6 @@ FORM.addEventListener("submit", (event) => {
       (product.price >= minPrice && product.price <= maxPrice);
 
     return genderOk && typeOk && priceOk;
-    // полностью равносильно такому коду:
-    // if (genderOk && typeOk && priceOk) {
-    //   return true;
-    // } else {
-    //   return false;
-    // }
-
-  
-
   });
 
 
@@ -420,15 +367,5 @@ FORM.addEventListener("submit", (event) => {
     cardsContainer.textContent = "No products found";
     return;
   }
-    // if(productsToShow.length === 0) {
-    //   // чищаем карточки и пишем сообщение
-    //   cardsContainer.innerHTML = `
-    //   <p class="no-products">No products found</p>
-    //   `;
-    // } else {
-    //   // если что-то нашли — рисуем карточки
-    //   renderCards(productsToShow);
-    // }
-
   renderCards(productsToShow);
 });

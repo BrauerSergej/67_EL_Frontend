@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
   <head>
@@ -9,42 +9,46 @@
     <script src="./index.js" defer></script>
   </head>
   <body id="root">
-    <header class="header">
-      <nav class="header_links nav">
-        <a class="h1_text" href="../Clothes Store/index.html">URBAN THREADS</a>
-        <a class="link hidden" href="#">New Arrivals</a>
-        <a class="link hidden" href="#">Men</a>
-        <a class="link hidden" href="#">Women</a>
-        <a class="link hidden" href="#">Sale</a>
-      </nav>
-      <nav class="header_icons">
-        <a href="#" class="icon hidden">
-          <img
-            src="../Clothes Store/assets/search_icon.png"
-            alt="Search icon"
-          />
-        </a>
-        <a href="#" class="icon hidden">
-          <img
-            src="../Clothes Store/assets/login_icon.webp"
-            alt="Profile icon"
-          />
-        </a>
-        <a href="#" class="icon cart_icon">
-          <img src="../Clothes Store/assets/cart_icon.png" alt="Cart icon" />
-        </a>
-        <span class="burger_menu"
-          ><svg
-            width="25"
-            height="25"
-            viewBox="0 0 22 22"
-            xmlns="http://www.w3.org/2000/svg"
+    <header>
+      <nav>
+        <div class="header_links nav">
+          <a class="h1_text" href="../Clothes Store/index.html"
+            >URBAN THREADS</a
           >
-            <rect x="3" y="5" width="18" height="2" rx="1" />
-            <rect x="3" y="11" width="18" height="2" rx="1" />
-            <rect x="3" y="17" width="18" height="2" rx="1" />
-          </svg>
-        </span>
+          <a class="link hidden" href="#">New Arrivals</a>
+          <a class="link hidden" href="#">Men</a>
+          <a class="link hidden" href="#">Women</a>
+          <a class="link hidden" href="#">Sale</a>
+        </div>
+        <div class="header_icons">
+          <a href="#" class="icon hidden">
+            <img
+              src="../Clothes Store/assets/search_icon.png"
+              alt="Search icon"
+            />
+          </a>
+          <a href="#" class="icon hidden">
+            <img
+              src="../Clothes Store/assets/login_icon.webp"
+              alt="Profile icon"
+            />
+          </a>
+          <a href="#" class="icon cart_icon">
+            <img src="../Clothes Store/assets/cart_icon.png" alt="Cart icon" />
+          </a>
+          <span class="burger_menu"
+            ><svg
+              width="25"
+              height="25"
+              viewBox="0 0 22 22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="3" y="5" width="18" height="2" rx="1" />
+              <rect x="3" y="11" width="18" height="2" rx="1" />
+              <rect x="3" y="17" width="18" height="2" rx="1" />
+            </svg>
+          </span>
+        </div>
       </nav>
     </header>
     <main>
@@ -60,7 +64,7 @@
         </div>
       </div>
       <div id="filters">
-        <form class="form">
+        <form class="filter_form">
           <div class="form_container">
             <label class="form_label" for="product_gender">Gender</label>
             <select id="product_gender" class="form_input" name="gender">

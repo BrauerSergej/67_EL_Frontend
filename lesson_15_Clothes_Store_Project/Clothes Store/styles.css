@@ -30,7 +30,7 @@ button {
   background-color: rgb(255, 255, 255);
 }
 
-.header {
+header nav {
   z-index: 2;
   display: flex;
   justify-content: space-between;
@@ -39,11 +39,7 @@ button {
   height: 70px;
   background-color: rgb(255, 255, 255);
   position: fixed;
-  padding: 0 60px;
-  /* position: sticky; */
-  /* top: 0; */
-  /* padding-left: 200px;
-  padding-right: 200px; */
+  padding: 0 200px;
   gap: 30px;
 }
 
@@ -99,7 +95,7 @@ button {
 }
 
 .overlay {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   color: #ffffff;
   font-size: 20px;
@@ -135,7 +131,7 @@ button {
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.18);
 }
 
-.form {
+.filter_form {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -195,6 +191,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 .card_image {
@@ -206,13 +203,13 @@ button {
 .card:hover .card_image {
   transform:scale(1.10);
 }
-
+/* 
 .product_type,
 .card_price,
 .card_gender,
 .card_status {
   font-size: 20px;
-}
+} */
 
 .footer {
   width: 100%;
